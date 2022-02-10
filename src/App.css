@@ -20,7 +20,7 @@ h1, h2, h3, p {
 }
 
 .header--title {
-  margin: 0.8em 0 0.8em 0.8em;
+  margin: 1em;
 }
 
 .header--logo {
@@ -35,28 +35,40 @@ h1, h2, h3, p {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   width: 250px;
   margin: 2em;
   background-color: white;
   border-radius: 0.5em;
   box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .card--img {
-  height: 200px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
+  overflow: hidden;
 }
 
 .card--wrapper {
   margin: 1em;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
 }
 
 .card--title {
-  padding: 0;
+  height: 3em;
+  font-size: 1.6em;
+  padding: 0.5em;
+  color: rgb(54, 54, 54);
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.2);
 }
 
 .card--list {
@@ -67,6 +79,18 @@ h1, h2, h3, p {
 .card--list_item {
   list-style: none;
   margin-left: 0;
+  margin-top: 0.4em;
+  text-transform: capitalize;
+}
+
+.card a {
+  margin-top: auto;
+  align-self: flex-end;
+  text-transform: none;
+  background-color: rgb(56, 56, 56);
+  color: whitesmoke;
+  padding: 0.3em;
+  border-radius: 0.3em;
 }
 
 .card--description {
