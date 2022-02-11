@@ -43,6 +43,11 @@ h1, h2, h3, p {
   border-radius: 0.5em;
   box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card--img {
